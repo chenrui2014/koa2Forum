@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  ul.articles
+    - var a = articles
+    each i in a
+      li.article(data-id=i._id)
+        h4.article-name=i.name
+        span.article-date=i.date
+        div.article-content=i.content

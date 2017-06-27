@@ -1,0 +1,26 @@
+{
+  "name": "koa_mini_cli",
+  "version": "1.0.0",
+  "description": "koa ",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "koajs"
+  ],
+  "author": "yangjiaxi",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.0.0-alpha.8",
+    "koa-router": "^7.1.1",
+    "koa-static": "^3.0.0",
+    "koa-views": "^5.2.1",
+    "mongoose": "^4.11.0",
+    "pug": "^2.0.0-rc.1"
+  },
+  "engines": {
+    "node": ">=7.6.0",
+    "npm": ">=3.0.0"
+  }
+}

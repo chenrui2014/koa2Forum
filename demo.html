@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<script>
+  const cssEl = document.createElement('style')
+  document.documentElement.firstElementChild.appendChild(cssEl)
+  function setPxPerRem(){
+    const dpr = 1
+    //把viewport分成10份的rem，html标签的font-size设置为1rem的大小
+    const pxPerRem = document.documentElement.clientWidth * dpr / 10
+    cssEl.innerHTML = 'html{font-size:' + pxPerRem + 'px!important}'
+  }
+  setPxPerRem()
+</script>
+<h4>Welcome to this page.</h4>
+<ul>
+  <li>
+    <h5>This is title.</h5>
+    <span>This is date.</span>
+    <div>
+      This is content.
+    </div>
+  </li>
+</ul>
+</body>
+</html>
