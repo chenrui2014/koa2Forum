@@ -1,7 +1,7 @@
 {
-  "name": "koa_mini_cli",
+  "name": "koa2Forum",
   "version": "1.0.0",
-  "description": "koa ",
+  "description": "koa2 pug koa2Forum",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
